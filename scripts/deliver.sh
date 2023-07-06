@@ -23,7 +23,4 @@ set +x
 echo 'The following command runs and outputs the execution of your Java'
 echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 set -x
-mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
-cd my-app
-mvn package
-java -jar target/${NAME}-${VERSION}.jar com.mycompany.app.App
+java -jar target/${NAME}-${VERSION}.jar
